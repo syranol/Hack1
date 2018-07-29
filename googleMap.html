@@ -11,6 +11,7 @@
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAQXZTNBfR4SsjJNEQ7BhQhKNI7iEaLLjk">
 		</script>
 
+
 		<script>
 		var map;
 		var infowindow;
@@ -106,26 +107,56 @@
 		}
 		google.maps.event.addDomListener(window, 'load', initialize);
 			//wait for window to load then call initialize
-		</script>
 
+
+		</script>
 
 	</head>
 
 	<body>
 	
 
-		<h1 id="title">Logo Name</h1>
-		  <!--Nagivation bar-->
-    
-		<nav class="navbar navbar-default">
+		<!--<h1 id="title">Logo Name</h1>-->
+
+ 			<center><h1 class="text-muted">For Smiles</h1></center>
+            <div class="form-group" align="right">
+                Username: 
+                <input type="text" name="username" /><br>
+                Password: 
+                <input type="password" name="password" /><br />
+                <br />
+                <a href="makeAccount.html">Don't have an account? Make one here!</a>
+                <br />
+
+                <button type="submit" class="btn btn-info"><a href="#">Submit</a></button>
+
+
+            </div>
+
+        </form>
+
+
+
+
+
+
+
+
+    <!--Nagivation bar-->
+ 
+    <nav class="navbar navbar-default" >
         <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand">Experience</a>
-                <a class="navbar-brand">Reward</a>
-                <a class="navbar-brand">MyProfiles</a>
-            </div>s
+
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="review.html">Experience</a></li>
+                <li ><a href="reward.html">Reward</a></li>
+                <li><a href="myProfile.html">Account</a></li>
+            </ul>
         </div>
     </nav>
+
+
    					<!--Search--> 
 
    	<div class="row">
@@ -141,21 +172,9 @@
 		<div class = "col" id="sortDropDown">
 			<div class="selectWrapper">
 			  <select class="selectBox">
-			  <option>Option 1</option>
-			  <option>Option 2</option>
-			  <option>Option 3</option>
-			  <option>Option 4</option>
-			</select>
-			</div>
-		</div>
+			  <option><b>Sort: Distance </b></option>
+			  <option><b>Sort: Reviews  </b></option>
 
-		<div class = "col">
-			<div class="selectWrapper">
-			  <select class="selectBox">
-			  <option>Option 1</option>
-			  <option>Option 2</option>
-			  <option>Option 3</option>
-			  <option>Option 4</option>
 			</select>
 			</div>
 		</div>
@@ -167,7 +186,7 @@
 		<div class="col"> 
 			
 			<div class="list-group" id="leftReview">
-		  		<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+		  		<a href="addEvent.html" class="list-group-item list-group-item-action flex-column align-items-start">
 		   			<div class="d-flex w-100 justify-content-between">
 		      			<h2 class="mb-1">St. Anthony Dining Room</h2>
 		      			<a href="#" class="badge badge-dark" style="margin-top: 10px">12 Active Posting</a>
@@ -180,7 +199,7 @@
 		    		<small>4.9         (22 Reviews)</small>
 		 		</a>
 
-		  		<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+		  		<a href="addEvent.html" class="list-group-item list-group-item-action flex-column align-items-start">
 		   			<div class="d-flex w-100 justify-content-between">
 		      			<h2 class="mb-1">Project Open Hand</h2>
 		      			<a href="#" class="badge badge-dark" style="margin-top: 10px">7 Active Posting</a>
@@ -193,7 +212,7 @@
 		    		<small>4.4         (53 Reviews)</small>
 		 		</a>
 		  
-		  		<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+		  		<a href="addEvent.html" class="list-group-item list-group-item-action flex-column align-items-start">
 		   			<div class="d-flex w-100 justify-content-between">
 		      			<h2 class="mb-1">Martin de Porres House of Hospitality</h2>
 		      			<a href="#" class="badge badge-dark" style="margin-top: 10px margin-left: 50px">4 Active Posting</a>
