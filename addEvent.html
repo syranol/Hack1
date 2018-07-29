@@ -8,19 +8,17 @@
 	<script type="text/javascript" src="calendarScript.js"></script>
 </head>
 <body>
+
+
 	<h1 class="display-1">Display 1</h1>
 
 	<nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand">Volunteer Generator</a>
+                <a class="navbar-brand">Experience</a>
+                <a class="navbar-brand">Reward</a>
+                <a class="navbar-brand">MyProfiles</a>
             </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="myProfile.html">My Profile</a></li>
-                <li><a href="addChores.html">Browse Activities</a><li>
-                <li><a href="mySchedule">My Schedule</a></li>
-            </ul>
         </div>
     </nav>
 
@@ -67,9 +65,26 @@
    </div>
 
     <div id=submitButton>
-    	<button type="button" class="btn btn-primary btn-lg">Large button</button>
-		<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+    	<button onclick="successReg()" type="button" class="btn btn-primary btn-lg">Large button</button>
+		<button onclick="successReg()"type="button" class="btn btn-secondary btn-lg">Large button</button>
 	</div>
+
+
+<p id="yesCheck"></p>
+
+<script>
+function successReg() {
+    var txt;
+
+    if (confirm("Confirm your registration")) {
+        txt = "You have successfully registered. Thank you!";
+    } else {
+        txt = "You pressed Cancel!";
+    }
+    document.getElementById("yesCheck").innerHTML = txt;
+}
+</script>
+
 
 
 </body>
